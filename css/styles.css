@@ -1,3 +1,4 @@
-#orderSummary {
+#orderSummary,
+#checkoutButton {
   display: none;
 }

@@ -18,43 +18,49 @@
       <form id="toppingsSize">
         <div class="form-group">
           <p>Pickup or Delivery?</p>
-          <input type="checkbox" name="deliveryMethod" value="pickup">Pickup<br>
-          <input type="checkbox" name="deliveryMethod" value="delivery">Delivery<br>
+          <input type="checkbox" name="deliveryMethodInput" value="pickup">Pickup<br>
+          <input type="checkbox" name="deliveryMethodInput" value="delivery">Delivery<br>
           <br>
 
           <p>Please select your size:</p>
-          <input type="checkbox" name="size" value="small">Small<br>
-          <input type="checkbox" name="size" value="medium">Medium<br>
-          <input type="checkbox" name="size" value="large">Large<br>
-          <input type="checkbox" name="size" value="xl">Extra Large<br>
+          <input type="checkbox" name="sizeInput" value="small">Small<br>
+          <input type="checkbox" name="sizeInput" value="medium">Medium<br>
+          <input type="checkbox" name="sizeInput" value="large">Large<br>
+          <input type="checkbox" name="sizeInput" value="extra large">Extra Large<br>
           <br>
 
           <p>Please select your toppings:</p>
-          <input type="checkbox" name="topping" value="whiteSauce">White Sauce<br>
-          <input type="checkbox" name="topping" value="redSauce">Red Sauce<br>
-          <input type="checkbox" name="topping" value="bbq">BBQ Sauce<br>
-          <input type="checkbox" name="topping" value="pesto">Pesto Sauce<br>
-          <input type="checkbox" name="topping" value="cheese">Cheese<br>
-          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-          <input type="checkbox" name="topping" value="sausage">Sausage<br>
-          <input type="checkbox" name="topping" value="bacon">Canadian Bacon<br>
-          <input type="checkbox" name="topping" value="chicken">Chicken<br>
-          <input type="checkbox" name="topping" value="mushroom">Mushroom<br>
-          <input type="checkbox" name="topping" value="bellpepper">Bellpepper<br>
-          <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
-          <input type="checkbox" name="topping" value="spinach">Spinach<br>
-          <input type="checkbox" name="topping" value="artichoke">Artichoke<br>
-          <input type="checkbox" name="topping" value="anchovy">Anchovy<br>
-          <input type="checkbox" name="topping" value="onion">Onion<br>
+          <input type="checkbox" name="toppingInput" value="White Sauce">White Sauce<br>
+          <input type="checkbox" name="toppingInput" value="Red Sauce">Red Sauce<br>
+          <input type="checkbox" name="toppingInput" value="BBQ Sauce">BBQ Sauce<br>
+          <input type="checkbox" name="toppingInput" value="Pesto Sauce">Pesto Sauce<br>
+          <input type="checkbox" name="toppingInput" value="Cheese">Cheese<br>
+          <input type="checkbox" name="toppingInput" value="Pepperoni">Pepperoni<br>
+          <input type="checkbox" name="toppingInput" value="Sausage">Sausage<br>
+          <input type="checkbox" name="toppingInput" value="Canadian Bacon">Canadian Bacon<br>
+          <input type="checkbox" name="toppingInput" value="Chicken">Chicken<br>
+          <input type="checkbox" name="toppingInput" value="Mushroom">Mushroom<br>
+          <input type="checkbox" name="toppingInput" value="Bellpepper">Bellpepper<br>
+          <input type="checkbox" name="toppingInput" value="Pineapple">Pineapple<br>
+          <input type="checkbox" name="toppingInput" value="Spinach">Spinach<br>
+          <input type="checkbox" name="toppingInput" value="Artichoke">Artichoke<br>
+          <input type="checkbox" name="toppingInput" value="Anchovy">Anchovy<br>
+          <input type="checkbox" name="toppingInput" value="Onion">Onion<br>
           <br>
         </div>
         <button type="submit" class="btn">Pizza Time!</button>
       </form>
+      <br>
+      <div id="orderSummary">
 
-      <span id="orderSummary">
+        <ul id="toppingsList">
+
+        </ul>
+     </div>
+     <div id="checkoutButton">
        <br>
-       <p>Your <span id="sizeSummary"></span> pizza with <span id="toppingSummary"></span>will be ready for <span id="deliverySummary"></span>in 20 minutes.</p>
-     </span>
+       <button type="submit" class="btn">Checkout</button>
+     </div>
     </div>
   </body>
 </html>
