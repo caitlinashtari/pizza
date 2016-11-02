@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <script src="js/jquery-3.1.1.js"></script>
+   <script src="js/scripts.js"></script>
+    <title>Pizza Pizza</title>
+  </head>
+  <body>
+    <div class = "container">
+      <div class="jumbotron">
+        <h2>Caitlin's Pizza Builder</h2>
+      </div>
+
+
+
+      <form id="toppingsSize">
+        <div class="form-group">
+          <p>Pickup or Delivery?</p>
+          <input type="checkbox" name="deliveryMethod" value="pickup">Pickup<br>
+          <input type="checkbox" name="deliveryMethod" value="delivery">Delivery<br>
+          <br>
+
+          <p>Please select your size:</p>
+          <input type="checkbox" name="size" value="small">Small<br>
+          <input type="checkbox" name="size" value="medium">Medium<br>
+          <input type="checkbox" name="size" value="large">Large<br>
+          <input type="checkbox" name="size" value="xl">Extra Large<br>
+          <br>
+
+          <p>Please select your toppings:</p>
+          <input type="checkbox" name="topping" value="whiteSauce">White Sauce<br>
+          <input type="checkbox" name="topping" value="redSauce">Red Sauce<br>
+          <input type="checkbox" name="topping" value="bbq">BBQ Sauce<br>
+          <input type="checkbox" name="topping" value="pesto">Pesto Sauce<br>
+          <input type="checkbox" name="topping" value="cheese">Cheese<br>
+          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="topping" value="sausage">Sausage<br>
+          <input type="checkbox" name="topping" value="bacon">Canadian Bacon<br>
+          <input type="checkbox" name="topping" value="chicken">Chicken<br>
+          <input type="checkbox" name="topping" value="mushroom">Mushroom<br>
+          <input type="checkbox" name="topping" value="bellpepper">Bellpepper<br>
+          <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
+          <input type="checkbox" name="topping" value="spinach">Spinach<br>
+          <input type="checkbox" name="topping" value="artichoke">Artichoke<br>
+          <input type="checkbox" name="topping" value="anchovy">Anchovy<br>
+          <input type="checkbox" name="topping" value="onion">Onion<br>
+          <br>
+        </div>
+        <button type="submit" class="btn">Pizza Time!</button>
+      </form>
+
+      <span id="orderSummary">
+       <br>
+       <p>This is what's on its way to your door:</p>
+     </span>
+    </div>
+  </body>
+</html>
