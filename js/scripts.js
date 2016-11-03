@@ -10,7 +10,6 @@ function Pizza (){
   this.cost = 10;
 }
 
-
 Pizza.prototype.deliveryCost = function () {
   if(this.deliveryMethod === "delivery"){
     this.cost += 5;
@@ -39,8 +38,6 @@ $(document).ready(function(){
     event.preventDefault();
 
     newPizza = new Pizza();
-
-
 
     $("input:checkbox[name=deliveryMethodInput]:checked").each(function(){
       deliveryMethod = $(this).val();
