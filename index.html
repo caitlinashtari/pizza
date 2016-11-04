@@ -24,38 +24,44 @@
     <div class = "container">
       <form id="toppingsSize">
         <div class="form-group">
-          <p>Pickup or Delivery?</p>
-          <input type="checkbox" name="deliveryMethodInput" value="pickup">Pickup<br>
-          <input type="checkbox" name="deliveryMethodInput" value="delivery">Delivery<br>
-          <br>
+          <div id="selectPickupDelivery">
+            <p>Pickup or Delivery?</p>
+            <input type="checkbox" name="deliveryMethodInput" value="pickup"><span class="radioSpace">Pickup</span><br>
+            <input type="checkbox" name="deliveryMethodInput" value="delivery"><span class="radioSpace">Delivery</span><br>
+            <br>
+          </div>
 
-          <p>Please select your size:</p>
-          <input type="checkbox" name="sizeInput" value="small">Small<br>
-          <input type="checkbox" name="sizeInput" value="medium">Medium<br>
-          <input type="checkbox" name="sizeInput" value="large">Large<br>
-          <input type="checkbox" name="sizeInput" value="extra large">Extra Large<br>
-          <br>
+          <div id="selectSize">
+            <p>Please select your size:</p>
+            <input type="checkbox" name="sizeInput" value="small"><span class="radioSpace">Small</span><br>
+            <input type="checkbox" name="sizeInput" value="medium"><span class="radioSpace">Medium</span><br>
+            <input type="checkbox" name="sizeInput" value="large"><span class="radioSpace">Large</span><br>
+            <input type="checkbox" name="sizeInput" value="extra large"><span class="radioSpace">Extra Large</span><br>
+            <br>
+          </div>
 
-          <p>Please select your toppings:</p>
-          <input type="checkbox" name="toppingInput" value="White Sauce">White Sauce<br>
-          <input type="checkbox" name="toppingInput" value="Red Sauce">Red Sauce<br>
-          <input type="checkbox" name="toppingInput" value="BBQ Sauce">BBQ Sauce<br>
-          <input type="checkbox" name="toppingInput" value="Pesto Sauce">Pesto Sauce<br>
-          <input type="checkbox" name="toppingInput" value="Cheese">Cheese<br>
-          <input type="checkbox" name="toppingInput" value="Pepperoni">Pepperoni<br>
-          <input type="checkbox" name="toppingInput" value="Sausage">Sausage<br>
-          <input type="checkbox" name="toppingInput" value="Canadian Bacon">Canadian Bacon<br>
-          <input type="checkbox" name="toppingInput" value="Chicken">Chicken<br>
-          <input type="checkbox" name="toppingInput" value="Mushroom">Mushroom<br>
-          <input type="checkbox" name="toppingInput" value="Bellpepper">Bellpepper<br>
-          <input type="checkbox" name="toppingInput" value="Pineapple">Pineapple<br>
-          <input type="checkbox" name="toppingInput" value="Spinach">Spinach<br>
-          <input type="checkbox" name="toppingInput" value="Artichoke">Artichoke<br>
-          <input type="checkbox" name="toppingInput" value="Anchovy">Anchovy<br>
-          <input type="checkbox" name="toppingInput" value="Onion">Onion<br>
-          <br>
+          <div id="selectToppings">
+            <p>Please select your toppings:</p>
+            <input type="checkbox" name="toppingInput" value="White Sauce"><span class="radioSpace">White Sauce</span><br>
+            <input type="checkbox" name="toppingInput" value="Red Sauce"><span class="radioSpace">Red Sauce</span><br>
+            <input type="checkbox" name="toppingInput" value="BBQ Sauce"><span class="radioSpace">BBQ Sauce</span><br>
+            <input type="checkbox" name="toppingInput" value="Pesto Sauce"><span class="radioSpace">Pesto Sauce</span><br>
+            <input type="checkbox" name="toppingInput" value="Cheese"><span class="radioSpace">Cheese</span><br>
+            <input type="checkbox" name="toppingInput" value="Pepperoni"><span class="radioSpace">Pepperoni</span><br>
+            <input type="checkbox" name="toppingInput" value="Sausage"><span class="radioSpace">Sausage</span><br>
+            <input type="checkbox" name="toppingInput" value="Canadian Bacon"><span class="radioSpace">Canadian Bacon</span><br>
+            <input type="checkbox" name="toppingInput" value="Chicken"><span class="radioSpace">Chicken</span><br>
+            <input type="checkbox" name="toppingInput" value="Mushroom"><span class="radioSpace">Mushroom</span><br>
+            <input type="checkbox" name="toppingInput" value="Bellpepper"><span class="radioSpace">Bellpepper</span><br>
+            <input type="checkbox" name="toppingInput" value="Pineapple"><span class="radioSpace">Pineapple</span><br>
+            <input type="checkbox" name="toppingInput" value="Spinach"><span class="radioSpace">Spinach</span><br>
+            <input type="checkbox" name="toppingInput" value="Artichoke"><span class="radioSpace">Artichoke</span><br>
+            <input type="checkbox" name="toppingInput" value="Anchovy"><span class="radioSpace">Anchovy</span><br>
+            <input type="checkbox" name="toppingInput" value="Onion"><span class="radioSpace">Onion</span><br>
+            <br>
+          </div>
         </div>
-        <button type="submit" class="btn">Pizza Time!</button>
+        <button type="submit" class="btn" id="pizzaTime">Pizza Time!</button>
       </form>
       <br>
       <div id="orderSummary">
@@ -66,7 +72,7 @@
      </div>
      <div id="checkoutButton">
        <br>
-       <button type="submit" class="btn">Checkout</button>
+       <button type="submit" class="btn" name="checkout">Checkout</button>
      </div>
     </div>
   </body>

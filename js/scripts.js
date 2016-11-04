@@ -34,21 +34,29 @@ Pizza.prototype.toppingsCost = function () {
 
 /* frontend -----------------*/
 $(document).ready(function(){
-  $("form#toppingsSize").submit(function(event){
-    event.preventDefault();
+  newPizza = new Pizza();
 
-    newPizza = new Pizza();
-
+  $("input[name='deliveryMethodInput']").click(function(){
     $("input:checkbox[name=deliveryMethodInput]:checked").each(function(){
       deliveryMethod = $(this).val();
       newPizza.deliveryMethod = deliveryMethod;
     });
+    $("#selectPickupDelivery").hide();
+    $("#selectSize").show();
+  });
 
+  $("input[name='sizeInput']").click(function(){
     $("input:checkbox[name=sizeInput]:checked").each(function(){
       size = $(this).val();
       newPizza.size = size;
     });
+    $("#selectSize").hide();
+    $("#selectToppings").show();
+    $("button#pizzaTime").show();
+  });
 
+  $("form#toppingsSize").submit(function(event){
+    event.preventDefault();
     $("input:checkbox[name=toppingInput]:checked").each(function(){
       var allToppings = $(this).val();
       newPizza.toppings.push(allToppings);
