@@ -8,6 +8,8 @@
 
 _This program allows the user to select a pizza delivery method, pizza size, and multiple toppings, and then returns the order summary upon submit._
 
+*Link to site: https://caitlinashtari.github.io/pizza/
+
 ## Specs
 
 *The program will recognize when a delivery method checkbox is selected
