@@ -10,22 +10,23 @@ _This program allows the user to select a pizza delivery method, pizza size, and
 
 ## Specs
 
-*The program will recognize when a delivery method checkbox is selected
-	Input: pickup checked
-	Output: pickup value pushed to pizza object and next screen is displayed
+*The user will select any number of pizza toppings
+	Input: pepperoni, white sauce, onions
+	Output: $13
 
-*The program will recognize when a size checkbox is selected
-	Input: medium
-	Output: medium value pushed to pizza object and next screen is displayed
+*The user will select a delivery option for a pizza with any number of toppings
+	Input: pepperoni, white sauce, onions, delivered
+	Output: $18
 
-*The program will recognize when topping checkboxes are selected and will push to object on submit
-	Input: white sauce, cheese, mushrooms, onions, submit
-	Output: white sauce, cheese, mushrooms, and onions are pushed to pizza object on submit
-	and checkout screen is displayed
-
-*The program will recognize when submit button is hit and show checkout screen with order summary
-	Input: hit submit button
-	Output: delivery, small, white sauce, $11
+*The user will select a pizza size with x number of toppings
+	Input: small, white sauce, cheese, mushrooms, onions
+	Output: $14
+	Input: medium, white sauce, cheese, mushrooms, onions
+	Output: $15
+	Input: large, white sauce, cheese, mushrooms, onions
+	Output: $16
+	Input: extra-large, white sauce, cheese, mushrooms, onions
+	Output: $17
 
 ## Setup/Installation Requirements
 
